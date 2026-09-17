@@ -34,7 +34,7 @@ function submitForm(event) {
         alert("Fill please all fields");
     } else {
         console.log(formData);
-        localStorage.clear();
+        localStorage.removeItem(GET_KEY);
         formData.email = "";
         formData.message = "";
         emailInput.value = "";
